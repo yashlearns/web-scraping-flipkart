@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import time
 import getpass
 import pandas as pd
+import getpass
 
 
 # Email id of the sender
@@ -12,7 +13,7 @@ sender = 'your_email@gmail.com'
 # Email id of receiver (user to be notified)
 receiver = '''Receiver email address'''
 
-password = input('Enter your account password: ')  # sender's email password
+password = getpass.getpass('Enter your account password: ')  # sender's email password
 
 budget = float(input('Your budget? '))
 
