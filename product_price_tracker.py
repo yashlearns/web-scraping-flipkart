@@ -2,11 +2,12 @@ import smtplib
 import requests
 from bs4 import BeautifulSoup
 import time
+import getpass
 
 sender = 'your_email@gmail.com'
 receiver = '''Receiver email address'''
 
-password = input('Enter your password: ')  # sender's email password
+password = getpass.getpass('Enter your password: ')  # sender's email password
 
 # url of the product page which is to be tracked
 url = 'https://www.flipkart.com/acer-aspire-7-core-i5-9th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-a715-75g-50sa-gaming-laptop/p/itmff1cbf710ce62?pid=COMFR6AANWZVZM8Y&lid=LSTCOMFR6AANWZVZM8YICAJ6Z&marketplace=FLIPKART&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=c34f11d5-4272-498b-9bbb-eed8fe8f6aea.COMFR6AANWZVZM8Y.SEARCH&ppt=sp&ppn=sp&ssid=wbcdwsvznk0000001597055865745&qH=312f91285e048e09'
